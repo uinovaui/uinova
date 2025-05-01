@@ -20,7 +20,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "tsc && next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
