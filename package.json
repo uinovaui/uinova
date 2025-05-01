@@ -1,11 +1,29 @@
 {
   "name": "uinova",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "Meet Uinova — a sleek, all-in-one open-source React UI library built to supercharge your interface development.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": ["react", "ui", "components", "uinova", "open-source"],
+  "author": "Uinova",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uinovaui/uinova.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uinovaui/uinova/issues"
+  },
+  "homepage": "https://github.com/uinovaui/uinova#readme",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "next dev",
+    "build": "tsc && next build",
     "start": "next start",
+    "type-check": "tsc --noEmit",
     "lint": "next lint"
   },
   "dependencies": {
